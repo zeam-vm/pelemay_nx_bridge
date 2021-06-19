@@ -27,7 +27,8 @@ defmodule PelemayNxBridge.MixProject do
     [
       {:nx, "~> 0.1.0-dev", github: "elixir-nx/nx", branch: "main", sparse: "nx"},
       {:ex_doc, "~> 0.24", only: :dev, runtime: false},
-      {:dialyxir, "~> 1.0", only: [:dev], runtime: false}
+      {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
+      {:git_hooks, "~> 0.6.2", only: [:dev], runtime: false}
     ]
   end
 end
