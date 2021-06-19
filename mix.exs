@@ -4,7 +4,7 @@ defmodule PelemayNxBridge.MixProject do
   def project do
     [
       app: :pelemay_nx_bridge,
-      version: "0.1.0",
+      version: "0.1.0-dev",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       deps: deps()
@@ -21,6 +21,7 @@ defmodule PelemayNxBridge.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:nx, "~> 0.1.0-dev", github: "elixir-nx/nx", branch: "main", sparse: "nx"},
       {:ex_doc, "~> 0.24", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false}
     ]
